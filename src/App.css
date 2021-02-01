@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap');
 
 body {
-    background: rgba(236, 167, 167, 0.472);
+    background: #E0E0E0;
     font-family: 'Karla', sans-serif;
 }
 
@@ -21,7 +21,7 @@ section {
 .wrapper {
     display: flex; 
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 400px;
     border: 1px solid #000;
@@ -29,19 +29,29 @@ section {
 
 h2 {
     text-align: center;
+    margin-top: 3vh;
 }
 
 .katze{
     padding: 6vh 0;
-    /* width: 100%; */
 }
 
 button {
     padding: 10px 20px;
-    background: #000;
+    background: #A0A0A0;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
     border: none;
     margin-bottom: 3vh;
+    cursor: pointer;
+}
+
+button:hover {
+    background: grey;
+    color: #000;
+}
+
+button:active {
+    background: rgb(238, 199, 199);
 }
