@@ -46,10 +46,12 @@ const Mood = () => {
 
 
     return (
-        <section className="wrapper">
-            <h2>Hello! Change my mood and my color!</h2>
-            <Cat size={200} mood={mood} color={color} />
-            <button onClick={() => {randomMood(); randomColor()}}>Try it!</button>
+        <section>
+            <div className="wrapper">
+                <h2>Hello!<br /> Change my mood<br /> and my color!</h2>
+                <Cat mood={mood} color={color} className="katze"/>
+                <button onClick={() => {randomMood(); randomColor()}}>Try it!</button>
+            </div>
         </section>
     );
 }
